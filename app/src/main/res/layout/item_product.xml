@@ -46,36 +46,41 @@
         <LinearLayout
             android:id="@+id/quantityContainer"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="36dp"
             android:layout_marginTop="8dp"
+            android:background="@drawable/quantity_selector_background"
             android:orientation="horizontal"
             android:visibility="gone"
+            android:gravity="center"
+            android:paddingHorizontal="4dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/productDetails">
 
             <ImageButton
                 android:id="@+id/decreaseButton"
-                android:layout_width="36dp"
-                android:layout_height="36dp"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:src="@drawable/ic_remove"
+                android:tint="@color/button_primary"
                 android:contentDescription="Decrease quantity"/>
 
             <TextView
                 android:id="@+id/quantityText"
-                android:layout_width="wrap_content"
+                android:layout_width="40dp"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="8dp"
+                android:gravity="center"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                android:gravity="center"/>
+                android:textColor="@color/text_primary"/>
 
             <ImageButton
                 android:id="@+id/increaseButton"
-                android:layout_width="36dp"
-                android:layout_height="36dp"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:src="@drawable/ic_add"
+                android:tint="@color/button_primary"
                 android:contentDescription="Increase quantity"/>
         </LinearLayout>
 
@@ -92,6 +97,7 @@
             app:iconGravity="textStart"
             app:iconPadding="0dp"
             app:cornerRadius="24dp"
+            app:backgroundTint="@color/button_primary"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/productDetails"/>
 

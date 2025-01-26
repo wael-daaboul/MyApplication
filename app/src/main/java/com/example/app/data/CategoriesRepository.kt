@@ -8,7 +8,7 @@ object CategoriesRepository {
         Category(
             id = 1,
             name = "Fruits & Vegetables",
-            iconResId = R.drawable.ic_fruits_veggies,
+            iconResId = R.drawable.ic_fruits_veggies_category,
             subcategories = listOf(
                 "All",
                 "Fruits",

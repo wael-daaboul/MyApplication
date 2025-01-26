@@ -79,10 +79,14 @@ class ProductAdapter(
             holder.quantityContainer.visibility = View.VISIBLE
             holder.quantityText.text = quantity.toString()
             
-            holder.decreaseButton.setImageResource(
-                if (quantity == 1) R.drawable.ic_delete
-                else R.drawable.ic_remove
-            )
+            // Update decrease button icon based on quantity
+            val iconRes = if (quantity == 1) R.drawable.ic_delete else R.drawable.ic_remove
+            val tintColor = if (quantity == 1) 
+                holder.itemView.context.getColor(R.color.text_secondary)
+                else holder.itemView.context.getColor(R.color.button_primary)
+            
+            holder.decreaseButton.setImageResource(iconRes)
+            holder.decreaseButton.setColorFilter(tintColor)
         } else {
             holder.addButton.visibility = View.VISIBLE
             holder.quantityContainer.visibility = View.GONE

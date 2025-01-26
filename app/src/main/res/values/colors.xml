@@ -1,11 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="primary">#2196F3</color>
-    <color name="primary_dark">#1976D2</color>
-    <color name="accent">#FFC107</color>
+    <!-- Primary Colors -->
+    <color name="primary">#0056D2</color>
+    <color name="primary_dark">#003A8C</color>
+    <color name="primary_light">#007BFF</color>
+
+    <!-- Background Colors -->
+    <color name="background">#F8F9FA</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="card_background">#ECEFF1</color>
+
+    <!-- Text Colors -->
     <color name="text_primary">#212121</color>
     <color name="text_secondary">#757575</color>
-    <color name="background">#F5F5F5</color>
-    <color name="surface">#F5F5F5</color>
-    <color name="divider">#EEEEEE</color>
+    <color name="text_tertiary">#9E9E9E</color>
+
+    <!-- Accent Colors -->
+    <color name="accent_gold">#FFD700</color>
+    <color name="accent_royal">#4169E1</color>
+
+    <!-- Button Colors -->
+    <color name="button_primary">#0056D2</color>
+    <color name="button_secondary">#424242</color>
+    <color name="button_text">#FFFFFF</color>
+    <color name="button_disabled">#E0E0E0</color>
+
+    <!-- Dividers and Borders -->
+    <color name="divider">#ECEFF1</color>
+    <color name="border">#E0E0E0</color>
 </resources>

@@ -1,6 +1,6 @@
 plugins {
     id 'com.android.application'
-    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-android'
     id 'androidx.navigation.safeargs.kotlin'
 }
 
@@ -16,6 +16,9 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        // Enable WebP conversion
+        vectorDrawables.useSupportLibrary = true
     }
 
     buildTypes {
@@ -33,9 +36,20 @@ android {
     kotlinOptions {
         jvmTarget = '17'
     }
+    
+    // Enable WebP support
+    buildFeatures {
+        buildConfig true
+    }
+    
+    // Optimize images during build
+    aaptOptions {
+        cruncherEnabled = true
+    }
 }
 
 dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.12.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.11.0'

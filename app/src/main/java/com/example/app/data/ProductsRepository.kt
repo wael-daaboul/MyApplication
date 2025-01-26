@@ -31,12 +31,14 @@ object ProductsRepository {
     )
 
     val products = listOf(
-        // Fruits
-        Product(1, "Apple", FRUITS_VEGGIES, "Fruits", 1.99, "kg", R.drawable.ic_fruit),
-        Product(2, "Orange", FRUITS_VEGGIES, "Fruits", 2.49, "kg", R.drawable.ic_fruit),
-        Product(3, "Banana", FRUITS_VEGGIES, "Fruits", 1.79, "kg", R.drawable.ic_fruit),
-        Product(4, "Red Grapes", FRUITS_VEGGIES, "Fruits", 3.99, "kg", R.drawable.ic_fruit),
-        Product(5, "Green Grapes", FRUITS_VEGGIES, "Fruits", 3.99, "kg", R.drawable.ic_fruit),
+        // Fruits with images
+        Product(1, "Apple", FRUITS_VEGGIES, "Fruits", 1.99, "kg", R.drawable.img_product_apple),
+        Product(2, "Orange", FRUITS_VEGGIES, "Fruits", 2.49, "kg", R.drawable.img_product_orange),
+        Product(3, "Banana", FRUITS_VEGGIES, "Fruits", 1.79, "kg", R.drawable.img_product_banana),
+        Product(4, "Red Grapes", FRUITS_VEGGIES, "Fruits", 3.99, "kg", R.drawable.img_product_grapes_red),
+        Product(5, "Green Grapes", FRUITS_VEGGIES, "Fruits", 3.99, "kg", R.drawable.img_product_grapes_green),
+        
+        // Products using placeholder
         Product(6, "Watermelon", FRUITS_VEGGIES, "Fruits", 0.99, "kg", R.drawable.ic_fruit),
         Product(7, "Melon", FRUITS_VEGGIES, "Fruits", 2.99, "kg", R.drawable.ic_fruit),
         Product(8, "Strawberry", FRUITS_VEGGIES, "Fruits", 4.99, "box", R.drawable.ic_fruit),
