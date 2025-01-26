@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.app.HomeFragment"
+        android:label="Home">
+        <action
+            android:id="@+id/action_home_to_productList"
+            app:destination="@id/productListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/productListFragment"
+        android:name="com.example.app.ProductListFragment"
+        android:label="Product List">
+        <action
+            android:id="@+id/action_productList_to_subcategory"
+            app:destination="@id/subcategoryFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim">
+            <argument
+                android:name="categoryName"
+                app:argType="string" />
+            <argument
+                android:name="subcategories"
+                app:argType="string[]" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/shoppingListFragment"
+        android:name="com.example.app.PurchasesFragment"
+        android:label="Shopping List" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.app.SettingsFragment"
+        android:label="Settings" />
+
+    <fragment
+        android:id="@+id/categoriesFragment"
+        android:name="com.example.app.CategoriesFragment"
+        android:label="Categories">
+        <action
+            android:id="@+id/action_categories_to_subcategory"
+            app:destination="@id/subcategoryFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/subcategoryFragment"
+        android:name="com.example.app.SubcategoryFragment"
+        android:label="Subcategory">
+        <argument
+            android:name="categoryName"
+            app:argType="string" />
+        <argument
+            android:name="subcategories"
+            app:argType="string[]" />
+    </fragment>
+</navigation> 

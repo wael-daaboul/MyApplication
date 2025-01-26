@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.App.SearchView" parent="Widget.AppCompat.SearchView">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textColorHint">@color/text_secondary</item>
+        <item name="queryBackground">@null</item>
+        <item name="searchIcon">@drawable/ic_search</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources> 
